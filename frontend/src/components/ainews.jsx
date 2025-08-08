@@ -8,7 +8,7 @@ function Ainews() {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5000/get-info')
+    fetch('https://ai-tools-application-backend.onrender.com/get-info')
       .then((res) => res.json())
       .then((data) => {
         setArticles(data);
